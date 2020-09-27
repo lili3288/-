@@ -1,0 +1,123 @@
+.main{
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}
+.serach{
+  display: flex;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+}
+.serach>.input{
+  flex:1;
+  border: 1rpx solid #e6e6e6;
+  height: 60rpx;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+ 
+  display: flex;
+  align-items: center;
+}
+.input>input{
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.input>.iconfont{
+  padding: 0 20rpx;
+  font-size: 40rpx;
+}
+.sub{
+  width: 140rpx;
+  height: 60rpx;
+  background-color: #2295ff;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24rpx;
+}
+/* 地址信息 */
+.content{
+  padding: 20rpx 30rpx 50rpx;
+  box-sizing: border-box;
+  height: calc(100vh - 200rpx);
+  overflow-y: scroll;
+}
+.fix{
+  padding: 10rpx 30rpx;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f9fb;
+}
+.add{
+  background-color: #0195ff !important;
+width: calc(100vw - 60rpx) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+
+margin: 0 !important;
+}
+.item{
+  border: 1rpx solid #e6e6e6;
+  border-radius: 10rpx;
+  padding: 25rpx 20rpx 0;
+  margin-bottom: 20rpx;
+}
+.item-hover{
+  /* opacity: .6; */
+background-color: #eee;
+}
+.item-flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  color:#9c9c9c;
+  font-size: 24rpx;
+  align-items: center;
+}
+.item-top{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+}
+.top-name{
+  font-size: 38rpx;
+
+}
+.top-img>image{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.save-do{
+  display: flex;
+}
+.edit{
+  margin-right: 20rpx;
+}
+.bottom{
+  border-top: 1rpx solid #e6e6e6;
+  padding: 20rpx 0;
+}
+.save-it{
+  border: 1rpx solid #0195ff ;
+  height: 50rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+color: #0195ff;
+font-size: 26rpx;
+  border-radius: 30rpx;
+}

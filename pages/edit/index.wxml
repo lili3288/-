@@ -1,0 +1,46 @@
+<view class="main">
+  <view class="content">
+    <view class="item">
+      <view class="tip">联系人：</view>
+      <input type="text" placeholder="输入联系人"/>
+    </view>
+    <view class="item">
+      <view class="tip">电话：</view>
+      <input type="text" placeholder="输入电话"/>
+      <button type="primary" size="mini" class="getcord">获取通讯录</button>
+    </view>
+    <view class="item">
+      <view class="tip">地址：</view>
+      <input type="text" placeholder="选择地址"/> 
+      <text class="iconfont icon-dingwei color-orange size-four" bindtap="map"></text>
+    </view>
+    <view class="item">
+      <view class="tip">详细地址：</view>
+      <input type="text" placeholder="输入详细地址"/> 
+    </view>
+    <view class="up">
+      <view class="up-text">
+        上传图片
+      </view>
+      <view class="img" bindtap="inputImg">
+        <text class="iconfont icon-jia img-icon" wx:if="{{!showImg}}"></text>
+        <image src="{{img}}" wx:if="{showImg}}"></image>
+      </view>
+    </view>
+    
+
+
+
+  </view>
+
+
+
+
+
+
+<view class="fix">
+  <button  type="primary" class="save">
+    保存
+    </button>
+</view>
+</view>

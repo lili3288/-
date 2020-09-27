@@ -1,0 +1,53 @@
+/**app.wxss**/
+ @import '/utils/icon.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.color-orange{
+  color: #e57614;
+}
+.color-blue{
+  color: #0195ff;
+}
+.size-four{
+  font-size: 40rpx;
+}
+.my-right{
+  margin-right: 10rpx;
+  font-size: 38rpx;
+}
+.flex{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.fix{
+  position: fixed;
+  bottom: 0;
+background-color: #fff;
+padding: 20rpx;
+width: 100vw;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.save{
+  background-color: #0195ff !important;
+width: calc(100vw - 60rpx) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+
+margin: 0 !important;
+}

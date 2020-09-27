@@ -1,0 +1,51 @@
+<view class="main">
+  <!-- 搜索栏 -->
+  <view class="serach">
+    <view class="input">
+      <text class="iconfont icon-sousuo " ></text>
+      <input type="text" placeholder="请输入姓名/电话" maxlength="11"/>
+    </view>
+    
+    <view class="sub">搜索</view>
+  </view>
+  <!-- 地址信息 -->
+  <view class="content">
+   
+    <view class="item "  wx:for="{{users}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <!-- 名称 -->
+      <view class="item-top">
+        <view class="top-img">
+          <image src="/images/snipaste_20200926_124219.jpg" ></image>
+        </view>
+        <view class="top-name">{{item.name}}</view>
+      </view>
+      <view class="item-flex">
+        <view class="middle-phone">电话：{{item.number}}</view>
+        <view class="middle-call">
+          <text class="iconfont icon-dianhua color-orange size-four" data-id="{{item.number}}" bindtap="call"></text>
+        </view>
+      </view>
+      <view class="item-flex">
+        <view class="bottom-address">地址：广东省广州市黄埔区彩频路6号</view>
+        <view class="bottom-location">
+          <text class="iconfont icon-dingwei color-orange size-four" bindtap="navMap"></text>
+        </view>
+      </view>
+      <view class="item-flex bottom">
+        <view class="save-it" catchtap="addPhone" data-index="{{index}}">保存到通讯录</view>
+        <view class="save-do">
+          <view class="edit" data-id="{{id}}" bindtap="edit"> <text class="iconfont icon-bianji my-right" ></text>编辑</view>
+          <view class="del" bindtap="del" data-id="{{item.id}}" data-index="{{index}}"> <text class="iconfont icon-icon_huabanfuben my-right"></text>删除</view>
+        </view>
+      </view>
+    </view>
+  
+ 
+  </view>
+  <view class="fix">
+    <button  type="primary" class="add">
+    增加地址簿
+    </button>
+  </view>
+
+</view>

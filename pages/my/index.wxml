@@ -1,0 +1,19 @@
+<view class="main" >
+  <view class="logo">
+    <view class="img">
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="content">
+    <view class="item">
+      <view class="flex">
+        <text class="iconfont icon-bianji color-blue my-right"></text>
+        编辑地址簿
+      </view>
+     
+      <text class="iconfont icon-you "></text>
+      
+    </view>
+  </view>
+</view>

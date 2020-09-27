@@ -1,0 +1,32 @@
+/* pages/my/my.wxss */
+.img>image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  border: 1rpx solid #e1e1e1;
+}
+
+
+.main {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}
+
+.logo {
+  padding: 50rpx 30rpx;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+}
+
+.content{
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.item{
+  padding:20rpx 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
